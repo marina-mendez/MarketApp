@@ -1,0 +1,87 @@
+﻿Tipo;Producto;Marca;Volumen/Peso;Precio unitario;Cantidad;Vto;Agregado en;Reciclable;Otro;Otro 2;Precio unitario final;
+Bebida;Agua Mineral;Glacial;1500 cc;140,07;949;mar-22;01/12/2021;Si;No;;;0
+Bebida;Agua Mineral;Glacial;750 cc;119,8;712;mar-22;22/11/2021;Si;No;;;0
+Bebida;Agua Mineral;Villavicencio;1500 cc;343,92;802;mar-22;21/11/2021;Si;No;;;0
+Bebida;Agua Mineral;Nestle;1500 cc;246,47;332;mar-22;28/12/2021;Si;No;;;0
+Bebida;Agua Mineral;Nestle;2000 cc;190,92;945;mar-22;07/12/2021;Si;No;;;0
+Bebida;Agua Saborizada Manzana;Ser;750 cc;133,56;603;mar-22;21/12/2021;Si;No;;;0
+Bebida;Agua Saborizada Manzana;Sierra de los Padres;1500 cc;386,93;248;mar-22;26/12/2021;Si;Si;;;0
+Bebida;Agua Saborizada Naranja;Ser;750 cc;264,04;528;mar-22;23/11/2021;Si;No;;;0
+Bebida;Agua Saborizada Pomelo;Sierra de los Padres;750 cc;374,8;153;mar-22;17/11/2021;Si;Si;;;0
+Bebida;Agua Saborizada Pomelo;Ser;1500 cc;356,55;313;mar-22;21/12/2021;Si;No;;;0
+Bebida;Aperitivo Amargo Limon;Terma;750 cc;194,5;612;mar-22;26/11/2021;Si;No;;;0
+Bebida;Aperitivo Amargo Serrano;Terma;750 cc;334,67;947;mar-22;26/11/2021;Si;No;;;0
+Bebida Alcoholica;Vino Blanco;Norton;750 cc;115,54;483;may-22;21/12/2021;Si;14;Mendoza;;0
+Bebida Alcoholica;Vino Blanco;Benjamin;750 cc;232,42;992;may-22;18/12/2021;Si;5;San Juan;;0
+Bebida Alcoholica;Vino Rosado;Norton;750 cc;289,93;335;may-22;07/12/2021;Si;14;Mendoza;;0
+Bebida Alcoholica;Vino Tinto;Norton;750 cc;218,24;235;may-22;21/12/2021;Si;11;Mendoza;;0
+Bebida Alcoholica;Vino Tinto;Benjamin;750 cc;221,52;692;may-22;21/12/2021;Si;8;San Juan;;0
+Conservas;Aceite de Girasol;Omega;750 cc;70,41;780;jul-23;24/12/2021;N/A;Botella Plastica;Uruguay;;0
+Conservas;Aceite de Girasol;Lira;750 cc;253,13;637;jul-23;16/11/2021;N/A;Botella Plastica;Uruguay;;0
+Conservas;Aceite de Girasol;Cocinero;1500 cc;233,44;171;jul-23;18/11/2021;N/A;Botella Plastica;Argentina;;0
+Conservas;Aceite de Girasol;Cocinero;750 cc;257,77;896;jul-23;08/12/2021;N/A;Botella Plastica;Argentina;;0
+Conservas;Aceite de Maíz;Cocinero;750 cc;385,6;971;jul-23;15/12/2021;N/A;Botella Plastica;Argentina;;0
+Conservas;Aceite de Maíz;Arcor;1500 cc;123,76;132;jul-23;23/11/2021;N/A;Botella Plastica;Argentina;;0
+Conservas;Aceite de Maíz;Arcor;750 cc;90,58;125;jul-23;26/11/2021;N/A;Botella Plastica;Argentina;;0
+Conservas;Aceite de Oliva;Cañuelas;750 cc;105,58;258;jul-23;06/12/2021;N/A;Botella Plastica;Argentina;;0
+Conservas;Aceite de Oliva;Cocinero;750 cc;297,49;988;jul-23;26/11/2021;N/A;Botella Plastica;Argentina;;0
+Conservas;Aceite de Oliva;Natura;750 cc;225,23;491;jul-23;16/12/2021;N/A;Botella Plastica;Argentina;;0
+Conservas;Aceite de Oliva;Natura;1500 cc;312,03;222;jul-23;28/11/2021;N/A;Botella Plastica;Argentina;;0
+Conservas;Aceite Rocio Vegetal;Marlolio;120 cc;296,17;317;jul-23;25/12/2021;N/A;Botella Metalica;Argentina;;0
+Conservas;Aceite Rocio Vegetal;Cocinero;120 cc;112,36;709;jul-23;06/12/2021;N/A;Botella Metalica;Argentina;;0
+Conservas;Aceite Rocio Vegetal;Natura;120 cc;332,94;523;jul-23;20/11/2021;N/A;Botella Metalica;Argentina;;0
+Conservas;Aceitunas Negras;Nucete;100 gr;213,02;525;jun-23;04/12/2021;N/A;Bolsa Plastica;Argentina;;0
+Conservas;Aceitunas Verdes;Nucete;100 gr;223,96;494;jul-23;23/12/2021;N/A;Bolsa Plastica;Argentina;;0
+Conservas;Aceitunas Verdes;Nucete;150 gr;52,65;909;jun-23;23/11/2021;N/A;Bolsa Plastica;Argentina;;0
+Conservas;Arroz 0000;Gallo;1000 gr;236,24;613;jun-23;15/11/2021;N/A;Bolsa Plastica;Argentina;;0
+Conservas;Arroz 0000;Molinos;2000 gr;90,2;719;jun-23;19/11/2021;N/A;Bolsa Plastica;Argentina;;0
+Conservas;Arroz Integral;Gallo;1500 gr;269,71;521;ago-22;09/12/2021;Si;Caja;Argentina;;0
+Conservas;Arroz Integral;Gallo;1000 gr;361,83;336;ago-22;18/11/2021;Si;Caja;Argentina;;0
+Conservas;Arroz Largo Fino;Molinos;1000 gr;281,37;820;jun-23;04/12/2021;N/A;Bolsa Plastica;Argentina;;0
+Conservas;Arroz Largo Fino;Luchetti;2000 gr;185,64;340;jun-23;03/12/2021;N/A;Bolsa Plastica;Chile;;0
+Conservas;Arvejas en Lata;Marolio;500 gr;55,83;669;jun-23;30/11/2021;Si;Lata;Argentina;;0
+Conservas;Arvejas en Lata;Arcor;500 gr;74,26;178;jun-23;21/11/2021;Si;Lata;Argentina;;0
+Conservas;Arvejas en Lata;Marolio;250 gr;383,67;399;jun-23;18/11/2021;Si;Lata;Argentina;;0
+Conservas;Fideos Codito;Luchetti;500 gr;134,09;388;jun-22;06/12/2021;N/A;Bolsa Plastica;Chile;;0
+Conservas;Fideos Codito;Matarazzo;500 gr;104,53;350;jun-22;03/12/2021;N/A;Bolsa Plastica;Argentina;;0
+Conservas;Fideos Moñito;Luchetti;500 gr;46,72;592;jun-22;27/12/2021;N/A;Bolsa Plastica;Chile;;0
+Conservas;Fideos Moñito;Knorr;500 gr;190,17;442;jun-22;08/12/2021;N/A;Bolsa Plastica;Argentina;;0
+Conservas;Fideos Mostachol;Terrabusi;500 gr;250,98;664;jun-22;31/12/2021;N/A;Bolsa Plastica;Argentina;;0
+Conservas;Fideos Municiones;Terrabusi;500 gr;69,8;245;jun-22;22/11/2021;N/A;Bolsa Plastica;Argentina;;0
+Conservas;Fideos Spaghetti;Luchetti;500 gr;311,93;604;jun-22;23/12/2021;N/A;Bolsa Plastica;Chile;;0
+Conservas;Fideos Spaghetti;Matarazzo;500 gr;301,04;830;jun-22;21/11/2021;N/A;Bolsa Plastica;Argentina;;0
+Conservas;Fideos Spaghetti;Marolio;500 gr;89,38;189;jun-22;16/11/2021;N/A;Bolsa Plastica;Argentina;;0
+Conservas;Fideos Tallarin;Terrabusi;500 gr;224,32;922;jun-22;19/11/2021;N/A;Bolsa Plastica;Argentina;;0
+Conservas;Fideos Tallarin;Arcor;500 gr;123,79;336;jun-22;02/12/2021;N/A;Bolsa Plastica;Argentina;;0
+Conservas;Papa y zanahoria en lata;Marolio;N/A;345,37;524;jun-23;06/12/2021;Si;Lata;Argentina;;0
+Conservas;Puré De Tomate;Arcor;500 gr;64,87;369;abr-22;27/12/2021;N/A;Tetra-Pak;Argentina;;0
+Conservas;Puré De Tomate;Noel;500 gr;111,64;555;abr-22;27/12/2021;N/A;Tetra-Pak;Brasil;;0
+Conservas;Salsa Tomate Filetto;Arcor;500 gr;209,42;119;abr-22;26/11/2021;N/A;Tetra-Pak;Argentina;;0
+Conservas;Salsa Tomate Filetto;Molto;500 gr;97,08;704;abr-22;04/12/2021;N/A;Tetra-Pak;Argentina;;0
+Conservas;Tomate en lata;Marolio;400 gr;276,5;170;jun-23;04/12/2021;Si;Lata;Argentina;;0
+Conservas;Tomate Pelado Peritas Enteros Lata;Marolio;400 gr;230,64;463;abr-22;22/12/2021;Si;Lata;Argentina;;0
+Conservas;Tomate Pelado Peritas Enteros Lata;Molto;400 gr;111,87;466;abr-22;20/11/2021;Si;Lata;Argentina;;0
+Cuidado Capilar;Acondicionador Cuidado Balanceado;Pantene;1000 cc;124,93;658;N/A;30/11/2021;Si;Si;;;0
+Cuidado Capilar;Acondicionador Cuidado Caida Cabello;Sedal;300 cc;254,75;246;N/A;21/11/2021;Si;Si;;;0
+Cuidado Capilar;Acondicionador Cuidado Clasico;Pantene;300 cc;140,47;338;N/A;21/12/2021;Si;No;;;0
+Cuidado Capilar;Acondicionador Cuidado Clasico;Plusbelle;300 cc;246,97;454;N/A;17/11/2021;Si;No;;;0
+Cuidado Capilar;Acondicionador Cuidado Clasico;Sedal;1000 cc;110,78;886;N/A;11/12/2021;Si;No;;;0
+Farmacia;Alcohol 70;;250 cc;54,23;807;N/A;26/11/2021;N/A;No;Si;;0
+Farmacia;Alcohol en Gel;;125 cc;89,4;590;N/A;26/12/2021;N/A;No;Si;;0
+Farmacia;Alcohol en Gel;;125 cc;187,7;908;N/A;24/12/2021;N/A;No;Si;;0
+Farmacia;Alcohol Etilico;;250 cc;218,57;102;N/A;19/12/2021;N/A;No;Si;;0
+Farmacia;Alcohol Etilico;;250 cc;101,55;731;N/A;20/12/2021;N/A;No;Si;;0
+Farmacia;Algodón;Estrella;100  gr;112,87;133;N/A;17/12/2021;N/A;No;No;;0
+Farmacia;Algodón;Doncella;120 gr;41,07;363;N/A;10/12/2021;N/A;No;No;;0
+Farmacia;Apósitos Tela;Curitas;N/A;77,09;527;N/A;22/11/2021;N/A;No;No;;0
+Farmacia;Apósitos Tela;Bandaid;N/A;215,06;861;N/A;14/12/2021;N/A;No;No;;0
+Frutas y Verduras;Acelga;N/A;N/A;221,03;385;N/A;19/12/2021;N/A;No;Argentina;;0
+Frutas y Verduras;Banana;Sabrostar;N/A;227,9;662;N/A;03/12/2021;N/A;Si;Ecuador;;0
+Frutas y Verduras;Broccoli;N/A;N/A;338,46;658;N/A;22/12/2021;N/A;No;Argentina;;0
+Frutas y Verduras;Manzana;Marlene;N/A;356,27;293;N/A;15/11/2021;N/A;No;Argentina;;0
+Frutas y Verduras;Papa;N/A;N/A;194,3;203;N/A;18/12/2021;N/A;No;Argentina;;0
+Frutas y Verduras;Tomate;N/A;N/A;259,62;811;N/A;06/12/2021;N/A;No;Argentina;;0
+Frutas y Verduras;Zanahoria;N/A;N/A;389,53;794;N/A;01/12/2021;N/A;No;Argentina;;0
+Golosinas;Alfajor Chocolate;Jorgito;N/A;366,18;636;N/A;11/12/2021;N/A;Si;No;;0
+Golosinas;Alfajor Chocolate;Terrabusi;N/A;97,65;234;N/A;19/11/2021;N/A;Si;No;;0
+Golosinas;Alfajor Chocolate;Arcor;N/A;336,15;787;N/A;24/12/2021;N/A;Si;No;;0
