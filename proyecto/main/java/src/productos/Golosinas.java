@@ -1,4 +1,4 @@
-package productos;
+package src.productos;
 
 public class Golosinas extends Productos {
 	private String azucar;

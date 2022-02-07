@@ -1,9 +1,9 @@
-package proyecto;
+package src.proyecto;
 
 import java.util.ArrayList;
 
-import helpers.Helper;
-import productos.Productos;
+import src.productos.Productos;
+import src.helpers.Helper;
 
 public class ListaProductos {
 

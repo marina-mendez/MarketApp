@@ -1,4 +1,4 @@
-package productos;
+package src.productos;
 
 public class BebAlcoholica extends Productos {
 	private String graduacion;

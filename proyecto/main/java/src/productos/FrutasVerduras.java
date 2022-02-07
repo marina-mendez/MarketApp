@@ -1,4 +1,4 @@
-package productos;
+package src.productos;
 
 public class FrutasVerduras extends Productos {
 	private String conservantes;

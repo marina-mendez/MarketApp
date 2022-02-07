@@ -1,4 +1,4 @@
-package productos;
+package src.productos;
 
 public class Farmacia extends Productos {
 	private String aptoChicos;

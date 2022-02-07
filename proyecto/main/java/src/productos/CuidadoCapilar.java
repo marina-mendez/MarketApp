@@ -1,4 +1,4 @@
-package productos;
+package src.productos;
 
 public class CuidadoCapilar extends Productos {
 	private String perfumado;

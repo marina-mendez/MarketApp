@@ -1,4 +1,4 @@
-package helpers;
+package src.helpers;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -12,7 +12,7 @@ public class Log {
 
 	}
 
-	static String txtPath = System.getProperty("user.dir") + "\\src\\proyecto\\logProductos.txt";
+	static String txtPath = System.getProperty("user.dir") + "\\main\\java\\src\\proyecto\\logProductos.txt";
 
 	private static void write(String text) {
 		
@@ -61,8 +61,9 @@ public class Log {
 			FileWriter fw = new FileWriter(archivo, true);
 			BufferedWriter bw = new BufferedWriter(fw);
 
-			bw.write(text);
 			bw.close();
+			
+			write(text);
 		} catch (Exception e) {
 			System.out.println(e);
 		}
@@ -89,7 +90,6 @@ public class Log {
 					+ nombre + ". \n" + "Volumen: " + volumen + ". \n" + "Precio: " + price + ". \n" + "Cantidad: "
 					+ cant + ". \n" + "Vencimiento: " + venc + ". \n" + "Reciclable: " + rec + ". \n" + "Otro1: "
 					+ otro1 + ". \n" + "Otro2: " + otro2;
-			bw.write(datos);
 			bw.close();
 			
 			write(datos);

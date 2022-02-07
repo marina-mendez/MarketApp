@@ -1,6 +1,6 @@
-package productos;
+package src.productos;
 
-import helpers.Helper;
+import src.helpers.Helper;
 
 @SuppressWarnings("rawtypes")
 public abstract class Productos implements Comparable{

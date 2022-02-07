@@ -1,18 +1,18 @@
-package helpers;
+package src.helpers;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import productos.BebAlcoholica;
-import productos.Bebidas;
-import productos.Conservas;
-import productos.CuidadoCapilar;
-import productos.Farmacia;
-import productos.FrutasVerduras;
-import productos.Golosinas;
-import productos.Productos;
+import src.productos.BebAlcoholica;
+import src.productos.Bebidas;
+import src.productos.Conservas;
+import src.productos.CuidadoCapilar;
+import src.productos.Farmacia;
+import src.productos.FrutasVerduras;
+import src.productos.Golosinas;
+import src.productos.Productos;
 
 public class Helper {
 
@@ -27,9 +27,9 @@ public class Helper {
 
 	}
 
-	private static BufferedReader OpenCsv() {
+	private static BufferedReader OpenCsv(String direccion) {
 		BufferedReader br = null;
-		String txtPath = System.getProperty("user.dir") + "\\src\\proyecto\\listadoProducto.csv";
+		String txtPath = System.getProperty("user.dir") + "\\main\\java\\src\\proyecto\\" + direccion;
 		try {
 			br = new BufferedReader(new FileReader(txtPath));
 		} catch (IOException e) {
@@ -38,6 +38,35 @@ public class Helper {
 
 		}
 		return br;
+
+	}
+
+	public static int aplicarNum(String dato, String tipo) {
+		int porcentajeDescuento = 0;
+
+		try {
+			BufferedReader br = OpenCsv("descuentoRecargo.csv");
+			String linea = br.readLine();
+			int columna = 0;
+			if (tipo.equalsIgnoreCase("d")) {
+				columna = 1;
+			} else {
+				columna = 2;
+			}
+			while (linea != null) {
+				String[] campos = linea.split(";");
+				linea = br.readLine();
+				if (campos[0].contains(dato)) {
+					porcentajeDescuento = Integer.parseInt(campos[columna].replace("%", ""));
+					break;
+				}
+			}
+			br.close();
+		} catch (Exception e) {
+			System.out.println("Hubo un error en la lectura del archivo CSV:");
+			System.out.println(e.getMessage());
+		}
+		return porcentajeDescuento;
 
 	}
 
@@ -60,7 +89,7 @@ public class Helper {
 			// productos en stock con mas de 600 unidades:
 			if (Integer.valueOf(cantidad) >= 600) {
 				float price = Float.parseFloat(Precio);
-				precioDesc = (price * 20) / 100;
+				precioDesc = (price * Helper.aplicarNum((DescRec.SEISC.getDesc()).toString(), "d")) / 100;
 				descuento = true;
 				Log.info(" \n" + "----Descuento del 20% por mas de 600 unidades en stock((precio * 20) / 100): $"
 						+ Float.toString(precioDesc) + ". Descuento: " + descuento);
@@ -68,7 +97,7 @@ public class Helper {
 			// productos con tomate
 			else if (producto.contains("tomate")) {
 				float price = Float.parseFloat(Precio);
-				precioDesc = (price * 15) / 100;
+				precioDesc = (price * Helper.aplicarNum((DescRec.TOMATE.getDesc()).toString(), "d")) / 100;
 				descuento = true;
 				Log.info(" \n" + "----Descuento del 15% por producto con tomate((precio * 15) / 100): $"
 						+ Float.toString(precioDesc) + ". Descuento: " + descuento);
@@ -76,7 +105,8 @@ public class Helper {
 			// productos marca Arcor
 			else if (marca.contains("Arcor")) {
 				float price = Float.parseFloat(Precio);
-				precioDesc = (price * 12) / 100;
+				precioDesc = (price * Helper.aplicarNum((DescRec.ARCOR.getDesc()).toString(), "d")) / 100;
+				
 				descuento = true;
 				Log.info(" \n" + "----Descuento del 12% por producto marca Arcor((precio * 12) / 100): $"
 						+ Float.toString(precioDesc) + ". Descuento: " + descuento);
@@ -84,7 +114,7 @@ public class Helper {
 			// productos reciclables
 			else if (reciclar.contains("si")) {
 				float price = Float.parseFloat(Precio);
-				precioDesc = (price * 10) / 100;
+				precioDesc = (price * Helper.aplicarNum((DescRec.RECICLABLE.getDesc()).toString(), "d")) / 100;
 				descuento = true;
 				Log.info(" \n" + "----Descuento del 10% por ser reciclable((precio * 10) / 100): $"
 						+ Float.toString(precioDesc) + ". Descuento: " + descuento);
@@ -92,7 +122,7 @@ public class Helper {
 			// productos que vencen en el 2022
 			else if ((vencimiento.contains("22"))) {
 				float price = Float.parseFloat(Precio);
-				precioDesc = (price * 7) / 100;
+				precioDesc = (price * Helper.aplicarNum((DescRec.VENCIM.getDesc()).toString(), "d")) / 100;
 				descuento = true;
 				Log.info(" \n" + "----Descuento del 7% por vencer en 2022 ((precio * 7) / 100): $"
 						+ Float.toString(precioDesc) + ". Descuento: " + descuento);
@@ -107,19 +137,19 @@ public class Helper {
 			if (!producto.isEmpty()) {
 				Log.info(" \n" + "*****Calculo de recargos acumulativos:");
 				if (Tipo.contains("Golosina")) {
-					recargo += 10;
+					recargo += Helper.aplicarNum((DescRec.GOLOSINAS.getDesc()).toString(), "r");
 					Log.info(" \n" + "----Recargo por golosina: 10% =" + Float.toString(recargo) + "%");
 					hayRecargo = true;
 				}
 				// productos con menos de 200 unidades en stock
 				if (Integer.valueOf(cantidad) <= 200) {
-					recargo += 9;
+					recargo += Helper.aplicarNum((DescRec.DOSC.getDesc()).toString(), "r");
 					hayRecargo = true;
 					Log.info(" \n" + "---- +Recargo por 200 unidades en stock: 9% =" + Float.toString(recargo) + "%");
 				}
 				// productos con envases de menos de 750cc
 				if (Integer.valueOf(volumen) <= 750) {
-					recargo += 3;
+					recargo += Helper.aplicarNum((DescRec.SETEC.getDesc()).toString(), "r");
 					hayRecargo = true;
 					Log.info(
 							" \n" + "---- +Recargo por envase con menos de 750cc: 3%=" + Float.toString(recargo) + "%");
@@ -251,7 +281,7 @@ public class Helper {
 		try {
 			Log.actualDate();
 
-			BufferedReader br = Helper.OpenCsv();
+			BufferedReader br = Helper.OpenCsv("listadoProducto.csv");
 
 			String linea = br.readLine();
 
@@ -279,14 +309,14 @@ public class Helper {
 					String otro2 = Helper.validaValor(campos[10]);
 
 					Log.logDatos(tipo, nombre, marca, volumen, precio, cant, vencim, reciclable, otro1, otro2);
-					
-					
+
 					// Chequeo el tipo de producto para asignar categorías a OTRO1 y OTRO2, e
 					// instanciarlo y guardarlos en ArrayList produc
 					Helper.checkTipo(nombre, marca, tipo, precio, volumen, cant, vencim, reciclable, otro1, otro2,
 							productos);
 				}
 			}
+			br.close();
 
 		} catch (IOException e) {
 			System.out.println("Hubo un error en la lectura del archivo CSV:");
@@ -296,6 +326,5 @@ public class Helper {
 
 		return productos;
 	}
-	
-	
+
 }
